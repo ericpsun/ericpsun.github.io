@@ -12,7 +12,7 @@ library(p8105.datasets)
 library(plotly)
 library(flexdashboard)
 
-data(ny_noaa)
+data(ny_noaa) 
 
 ```
 
