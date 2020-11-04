@@ -1,8 +1,33 @@
 ---
-title: "About"
+title: "About me"
 ---
 
-### About this site
+### Eric Sun
+
+# Education
+Columbia University College of Physicians and Surgeons, MD Candidate, Class of 2021
+
+Harvard University T.H. Chan School of Public Health, MPH in Health Policy, 2021
+
+Brown University, ScB Biology with Honors, 2013
+
+
+# Experience
+Columbia University Scholarly Project Program, Global and Population Health Track, 2020
+
+Massachusetts Attorney General’s Office, Health Policy Intern, 2019-2020
+
+Bassett Healthcare Network, Lean Six Sigma Green Belt, 2018-2019
+
+Columbia-Harlem Homeless Medical Partnership, Senior Clinician; Data/Quality Director, 2016-2021
+
+# Publications
+Gould, L. H., Sun, E., Germain, P., Gallego, A., Adams, L., Huynh, M., Van Wye, G., Gwynn, R. C., & Barbot, O. (2019). Surveillance to Monitor the Impact of the Trump Administration on the Health of New York City Residents. Journal of public health management and practice : JPHMP, 10.1097/PHH.0000000000001045. Advance online publication. doi:10.1097/PHH.0000000000001045
+
+Duwaerts CC, Sun EP, Cheng C-W, van Rooijen N, Gregory SH (2013) Cross-Activating Invariant NKT Cells and Kupffer Cells Suppress Cholestatic Liver Injury in a Mouse Model of Biliary Obstruction. PLoS ONE 8(11): e79702. doi:10.1371/journal.pone.0079702
+
+# About this site
 
 This site was created using R version 4.0.2 (2020-06-22)
+
 It was created for p8105, "Data Science I"
