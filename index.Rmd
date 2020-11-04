@@ -1,0 +1,7 @@
+---
+title: "Eric Sun's BST HW4 Page"
+---
+
+### Welcome to HW4 Homepage
+
+This website contains a brief introductory landing page, a resume, and links to professional networks.
