@@ -14,29 +14,49 @@ library(flexdashboard)
 
 data(ny_noaa) 
 
+
+ny_noaa = ny_noaa%>%
+  slice_sample(n=10000) %>%
+  separate(date, into = c("year", "month", "day"), convert = TRUE) %>% 
+  mutate(
+    tmax = as.numeric(tmax),
+    tmin = as.numeric(tmin),
+    snow_mm = snow,
+    snow = round(snow_mm * 0.03937 * 4) / 4)
 ```
 
-Column {data-width=650}
+NY NOAA Data {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Precipitation by year
 
 ```{r}
-
+ny_noaa %>%
+  drop_na(prcp)%>%
+  plot_ly(x= ~year, y=~prcp, alpha = .5,
+          type = "bar")
 ```
 
-Column {data-width=350}
+More charts {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Snowfall by minimum temperature
 
 ```{r}
-
+ny_noaa %>%
+  drop_na(snow_mm) %>%
+  filter(snow_mm > 0) %>%
+  plot_ly(x = ~tmin, y = ~snow_mm, alpha = .5,
+          type = "box")
 ```
 
-### Chart C
+### Temperature extremes by weather station in 2010
 
 ```{r}
-
+ny_noaa %>%
+  filter(year == 2010) %>%
+  drop_na(tmax) %>%
+  plot_ly(x = ~id, y= ~tmax, color = ~tmin, alpha = .5,
+          type = "scatter", mode = "markers")
 ```
 

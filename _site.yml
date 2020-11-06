@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "Dashboard"
+      href: flexdashboard.html
     - text: "Linked In"
       href: https://www.linkedin.com/in/eric-sun-9466b219/
     - icon: fa-envelope fa-lg
